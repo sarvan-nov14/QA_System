@@ -39,6 +39,9 @@ developer@ubuntu:~$qa_system/ python manage.py createsuperuser
 ```
 Login the admin user at http://0.0.0.0:8000/admin
 
+### Manager User roles
+We are using django Groups for handle different gropus. Create Users, Mentors group at [django groups](http://0.0.0.0:8000/admin/auth/group/)
+
 ### Run the development server
 ```console
 developer@ubuntu:~$qa_system/mahvie python manage.py migrate
