@@ -33,8 +33,19 @@ Once the qa_env is actiavted we can install the packages
 ### Database
 We are using django default sqlite3 database
 
+### Create superuser
+```console
+developer@ubuntu:~$qa_system/ python manage.py createsuperuser
+```
+Login the admin user at http://0.0.0.0:8000/admin
+
 ### Run the development server
 ```console
 developer@ubuntu:~$qa_system/mahvie python manage.py migrate
 developer@ubuntu:~$qa_system/mahvie python manage.py runserver
 ```
+
+### API Documentation
+1. [Swagger](http://0.0.0.0:8000/swagger/)
+2. [Postman](https://documenter.getpostman.com/view/13980159/TVzYeDUE)
+3. [DRF Inbuilt](http://0.0.0.0:8000/api/v1/)
